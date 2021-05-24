@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.main {
+  margin:30px;
+  background-color:white;
+}
+
+.pokedex {
+  margin:auto;
+  display:flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+
+}
+
+@media (max-width: 1024px) {
+  .pokedex {
+    flex-direction:column;
+  }
+}
+
+.items {
+  margin: 20px;
+  background-color:white;
+  border:2px solid black;
+  border-radius:5px;
+}
+
+.item-title {
+  display:flex;
+  padding:10px;
+  background-color:black;
+  color:white;
+  vertical-align: middle;
+}
+
+.item-title-span {
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.item-image {
+  border-bottom:2px solid black;
+  padding:10px;
+  text-align:center;
+}
+
+.item-content {
+  display: flex;
+  border-bottom: 1px solid black;
+  flex-basis: 25%;
+  flex-grow: 0;
+}
+
+.item-content-value {
+  color:black;
+  flex: 1 1 0px;
+  margin-left:10px;
+  min-height: 2rem;
+}
+
+.item-content-value:nth-child(2) {
+  border-left:1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item-description {
+  padding:20px;
+}
+
+.footer {
+  margin:auto;
+  margin-top:13.2vh;
+  border-top:1px solid black;
+  padding:20px;
+  text-align: end;
+  background-color: #282c34;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.type-icon {
+  display: inline-block;
+  width: 92.5%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background: #dbdbdb;
+  border: 1px solid #a3a3a3;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: #fff;
+  font-size: .75rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 70%);
+  text-transform: uppercase;
+  transition: opacity .4s;
+}
+
+.type-fire {
+  background-color: #f42;
+}
+
+.type-grass {
+  background-color: #7c5;
+}
+
+.type-water {
+  background-color: #39f;
+}
+
+.mt-5 {
+  margin-top:5px; 
+}
+
+.type {
+  text-align: center;
+  padding-top: 2px;
+}
